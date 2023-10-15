@@ -21,7 +21,13 @@ CREATE TABLE table2
 /*SELECT * FROM employeDetails
 JOIN otherDetails ON employeDetails.ID = otherDetails.ID;*/
 
-
+/*Код встроенной процедуры*/
+/*
+CREATE DEFINER=`root`@`localhost` PROCEDURE `CalculateAVG`()
+BEGIN
+SELECT AVG(Age) AS avgAge FROM table1;
+END
+*/
 
 
 
